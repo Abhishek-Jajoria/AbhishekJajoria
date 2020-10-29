@@ -1,0 +1,48 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+  }
+
+  // How far of a scroll travel within <main> prior to the
+// link appearing
+$scrollLength: 100vh;
+
+.back-to-top-wrapper {
+  // uncomment to visualize "track"
+  // 
+  outline: 1px solid red;
+  position: absolute;
+  top: $scrollLength;
+  right: 0.25rem;
+  // Optional, extends the final link into the 
+  // footer at the bottom of the page
+  // Set to `0` to stop at the end of `main`
+  bottom: -5em;
+  // Required for best support in browsers not supporting `sticky`
+  width: 3em;
+  // Disable interaction with this element
+  pointer-events: none;
+}
+
+
+  .back-to-top-link {
+    // `fixed` is fallback when `sticky` not supported
+    position: fixed;
+    // preferred positioning, requires prefixing for most support, and not supported on Safari
+    // @link https://caniuse.com/#search=position%3A%20sticky
+    position: sticky;
+    // reinstate clicks
+    pointer-events: all;
+    // achieves desired positioning within the viewport
+    // relative to the top of the viewport once `sticky` takes over, or always if `fixed` fallback is used
+    top: calc(100vh - 5rem);
+  
+    // ... styles written earlier
+  }
+/* About */
+
+.card-img {
+      border: 10px solid white;
+  }
