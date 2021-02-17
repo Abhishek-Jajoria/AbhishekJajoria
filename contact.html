@@ -19,71 +19,73 @@
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">AbhishekJajoria.com</a>
+        <!-- LOGO -->
+        <a class="navbar-brand" href="index.html#">AJ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!-- LI -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+            <ul class="navbar-nav ms-auto mr-auto">
+                <!-- HOME -->
+                <li class="nav-item align-self-center active">
                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- ABOUT -->
+                <li class="nav-item align-self-center">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
-                <li class="nav-item active">
+                <!-- CONTACT -->
+                <li class="nav-item align-self-center">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item">
+                <!-- PROJECTS -->
+                <li class="nav-item align-self-center">
                     <a class="nav-link" href="index.html#project">Projects</a>
                 </li>
-                <li class="nav-item dropdown">
+                <!-- FOLLOW ME -->
+                <li class="nav-item align-self-center dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Follow Me
                     </a>
+                    <!-- SOCIAL LINKS -->
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" target="/blank"
-                            href="https://www.facebook.com/abhishek.jajoria">Facebook</a>
-                        <a class="dropdown-item" target="/blank"
-                            href="https://www.instagram.com/abhishek.jajoria/">Instagram</a>
+                        <a class="dropdown-item" target="/blank" href="https://www.facebook.com/abhishek.jajoria">Facebook</a>
+                        <a class="dropdown-item" target="/blank" href="https://www.instagram.com/abhishek.jajoria/">Instagram</a>
                         <a class="dropdown-item" target="/blank" href="https://twitter.com/abhishekj95">Twitter</a>
-                        <!-- <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" target="/blank" href="#">Write for us</a> -->
                     </div>
                 </li>
-
-
-                <!--  <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
             </ul>
-
-            <form class="form-inline mr-2 my-xs-2 my-lg-0 mx-sm-0 my-sm-1">
-                <input class="form-control mr-2" type="search" placeholder="Search"
-                    aria-label="Search" style="width:155px">
-                <button type="button" class="btn btn-outline-light my-1">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z">
-                        </path>
-                        <path fill-rule="evenodd"
-                            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
-                        </path>
-                    </svg>
-                </button>
-            </form>
-            <div>
-                <!-- <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons"> -->
-                <button class="btn btn-danger mx-2 my-1 my-sm-0" type="submit" data-toggle="modal"
-                    data-target="#signupModal">Sign Up</button>
-                <button class="btn btn-danger my-sm-0" type="submit" data-toggle="modal" data-target="#loginModal">Log
-                    In</button>
-                <!-- </div> -->
-
+            <!-- SEARCH BAR -->
+            <div class='row col mr-auto'>
+                <form class="form-inline col-xl-8 col-md-7 col-sm-12 row mx-1 item-align-sm-center">
+                    <!-- SEARCH BAR -->
+                    <input class="form-control mr-2 col" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <!-- SEARCH BUTTON -->
+                    <button type="button" class="btn btn-outline-light my-1 col-2 col-xl-1 col-md-2">
+                        <!-- SEARCH LOGO -->
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z">
+                            </path>
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+                <!-- SIGN UP AND LOG IN BTN -->
+                <div class='col-md-5 col-sm-12 row ml-auto mt-1 col-xl-4 '>
+                    <button class="btn text-light btn-outline-secondary mr-2 col" type="submit" data-toggle="modal"
+                        data-target="#signupModal">Sign Up</button>
+                    <button class="btn text-light btn-outline-secondary col  justify-content-center" type="submit" data-toggle="modal" data-target="#loginModal">Log
+                        In</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -236,24 +238,20 @@
     <hr>
     <!-- FOOTER -->
     <div class="container">
-
         <footer class="container">
             <div class="">
                 <div>
                     <p class="float-left">© 2020-2021 Design by AbhishekJajoria&nbsp; ·
-                        <a class="text-danger " href="#" data-toggle="modal" data-target="#PrivacyModal">Privacy</a> ·
-                        <a class="text-danger " href="#" data-toggle="modal" data-target="#TermsModal">Terms</a>
+                        <a class="text-secondary " href="#" data-toggle="modal" data-target="#PrivacyModal">Privacy</a> ·
+                        <a class="text-secondary " href="#" data-toggle="modal" data-target="#TermsModal">Terms</a>
                     </p>
-                </div>
-                <div class="float-right">
-                    <div class="back-to-top-wrapper">
-                        <p><a class="btn btn-outline-danger btn-sm" role="button" aria-label="Scroll to Top" href="#top" ;>Back to top</a></p>
-                    </div>
                 </div>
             </div>
         </footer>
-
     </div>
+
+    <!-- BACK TO TOP BTN -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
     <!-- PrivacyModal -->
     <div class="modal fade" id="PrivacyModal" tabindex="-1" aria-labelledby="PrivacyModalLabel" aria-hidden="true">
@@ -792,6 +790,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script src="plugin.js"></script>
 
 </body>
 
