@@ -106,10 +106,6 @@ pointer-events: none;
 
 
 
-
-
-
-
 /* -------------Neon Text Reveal Animation Effect--------------- */
 
 /* *{
@@ -220,3 +216,10 @@ pointer-events: none;
       transform: translateX(0%);
   }   
 }
+
+/* ------------- DARK MODE ---------------- */
+
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
+
