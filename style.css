@@ -55,20 +55,23 @@ pointer-events: none;
   bottom: 70px; /* Place the button at the bottom of the page */
   right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
+  border: 3px solid white; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  color: black; /* Text color */
+  background-color: rgba(0,0,0,0.5); /* Set a background color */
+  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 7px 17px; /* Some padding */
   border-radius: 15px; /* Rounded corners */
   font-size: 30px; /* Increase font size */
   /* box-shadow: 10px 10px 5px #aaaaaa; */
   box-shadow: 0px 0px 8px 2px #888888;
-  }
+  transition: all 0.3s ease;
+}
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-  color: white;
+  background-color: rgba(0,0,0,0.6); /* Add a dark-grey background on hover */
+  /* color: white; */
+  border: 3px solid #999; /* Remove borders */
+  transform: scale(1.2);
   }
 
 
@@ -271,4 +274,28 @@ pointer-events: none;
 .mousemove span:hover::before{
   transition: 0s;
   transform: scale(1);
+}
+
+/* ---------------Typing Text----------------- */
+.container .row .typingText{
+  /* background: rgba(0,0,0,0.2); */
+  background-image: url("g (1).jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;;
+  background-size: cover;
+
+}
+
+/* -------------Media query--------------- */
+@media(max-width:770px){
+  .container .row .card .card-body .display-3{
+    font-size: 50px;
+  }
+}
+
+@media(max-width:460px){
+  .container .row .card .card-body .display-3{
+    font-size: 40px;
+  }
 }
