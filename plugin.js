@@ -18,3 +18,14 @@
      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
  };
 
+
+
+ // ------------TYPING ANIMATION------------
+ $(document).ready(function(){
+    var typed = new Typed(".typing",{
+        strings: ["Front-end Developer", "Web Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true
+    });
+});
